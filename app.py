@@ -97,9 +97,9 @@ st.set_page_config(page_title="PragyanAI Video Creator", layout="wide")
 
 # Display logo if it exists
 if os.path.exists("PragyanAI_Transperent.png"):
-    st.image("PragyanAI_Transperent.png")
+    st.image("20230918_175528.jpg")
 
-st.title("PragyanAI - Multimedia Merger")
+st.title("Pranathi")
 st.markdown("Upload multiple images, specify timing, and add audio from a file or YouTube.")
 
 with st.sidebar:
@@ -115,4 +115,8 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader("1. Images")
-    uploaded_images = st.file_uploader("Upload Image Sequence", type=["jpg", "png", "jpeg"], accept_mul
+    uploaded_images = st.file_uploader(
+    "Upload Image Sequence",  # Positional argument (label)
+    type=["jpg", "png", "jpeg"],  # Keyword argument
+    accept_multiple_files=True    # Corrected keyword argument
+)
