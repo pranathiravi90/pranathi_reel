@@ -95,10 +95,10 @@ def create_video(image_files, duplicate_count, fps, audio_path):
 st.set_page_config(page_title="PragyanAI Video Creator", layout="wide")
 
 # Display logo if it exists
-if os.path.exists("WhatsApp Image 2026-04-25 at 11.02.18 PM.jpeg"):
-    st.image("WhatsApp Image 2026-04-25 at 11.02.18 PM.jpeg")
+if os.path.exists("20230918_175528.jpg"):
+    st.image("20230918_175528.jpg")
 
-st.title("WhatsApp Image 2026-04-25 at 11.02.18 PM.jpeg")
+st.title("20230918_175528.jpg")
 st.markdown("Upload multiple images, specify timing, and add audio from a file or YouTube.")
 
 with st.sidebar:
